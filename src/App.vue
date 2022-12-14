@@ -1,37 +1,33 @@
 <template>
   <HeaderView />
- 
-  <router-view/>
+  <div class="container text-light">
+    <router-view />
+  </div>
 </template>
 
 <script>
-  import HeaderView from "@/components/HeaderView.vue";
+import HeaderView from "@/components/HeaderView.vue";
 export default {
-  components:{
-    HeaderView
-  }
-}
+  components: {
+    HeaderView,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+body {
+  background: #222831;
 }
-
-nav {
-  padding: 30px;
+.container {
+  max-width: 900px;
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.card {
+  background: #1a1d24;
 }
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.card-body {
+  color: #f9ffee;
+}
+.card-body a {
+  color: #efbb35;
 }
 </style>
