@@ -1,9 +1,4 @@
-<template>
-  <div class="home">
-    <AddPost />
-    <PostList v-bind:posts="posts" :errors="errors" />
-  </div>
-</template>
+
 
 <script>
 // @ is an alias to /src
@@ -36,3 +31,10 @@ export default {
   },
 };
 </script>
+
+<template>
+  <div class="home">
+    <AddPost />
+    <PostList v-bind:posts="posts" :errors="errors" />
+  </div>
+</template>
