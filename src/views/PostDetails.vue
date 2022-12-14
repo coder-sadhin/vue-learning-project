@@ -1,4 +1,9 @@
 <template>
+  <div class="row mb-3">
+    <div class="col-auto">
+      <router-link to="/" class="btn btn-block btn-info">Go Back</router-link>
+    </div>
+  </div>
   <div class="card my-3">
     <div class="card-body">
       <h3>{{ post.title }}</h3>

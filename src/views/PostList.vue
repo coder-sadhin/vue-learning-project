@@ -1,6 +1,11 @@
 <template>
   <div class="post-list">
-    <div class="card my-3" v-for="post of posts" :key="post.id">
+    <div
+      class="card my-3"
+      v-for="post of posts"
+      :key="post.id"
+      @dblclick="$emit('del-post', post.id)"
+    >
       <div class="card-body">
         <h3>
           <router-link :to="`/postDetails/${post.id}`">{{
