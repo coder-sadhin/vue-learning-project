@@ -1,10 +1,17 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <HeaderView />
+ 
   <router-view/>
 </template>
+
+<script>
+  import HeaderView from "@/components/HeaderView.vue";
+export default {
+  components:{
+    HeaderView
+  }
+}
+</script>
 
 <style>
 #app {
